@@ -69,6 +69,7 @@ Partial Class Form1
         Me.Button43 = New System.Windows.Forms.Button()
         Me.Button44 = New System.Windows.Forms.Button()
         Me.Button45 = New System.Windows.Forms.Button()
+        Me.screen = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -90,9 +91,8 @@ Partial Class Form1
         Me.Label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label2.Location = New System.Drawing.Point(296, 66)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(30, 31)
+        Me.Label2.Size = New System.Drawing.Size(0, 31)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "0"
         '
         'Button1
         '
@@ -744,12 +744,25 @@ Partial Class Form1
         Me.Button45.Text = "☰"
         Me.Button45.UseVisualStyleBackColor = True
         '
+        'screen
+        '
+        Me.screen.BackColor = System.Drawing.Color.FromArgb(CType(CType(187, Byte), Integer), CType(CType(188, Byte), Integer), CType(CType(190, Byte), Integer))
+        Me.screen.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.screen.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
+        Me.screen.Location = New System.Drawing.Point(13, 74)
+        Me.screen.Name = "screen"
+        Me.screen.Size = New System.Drawing.Size(304, 31)
+        Me.screen.TabIndex = 93
+        Me.screen.Text = "0"
+        Me.screen.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(187, Byte), Integer), CType(CType(188, Byte), Integer), CType(CType(190, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(329, 469)
+        Me.Controls.Add(Me.screen)
         Me.Controls.Add(Me.Button45)
         Me.Controls.Add(Me.Button44)
         Me.Controls.Add(Me.Button43)
@@ -856,4 +869,5 @@ Partial Class Form1
     Friend WithEvents Button43 As Button
     Friend WithEvents Button44 As Button
     Friend WithEvents Button45 As Button
+    Friend WithEvents screen As TextBox
 End Class
