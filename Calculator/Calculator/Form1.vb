@@ -53,4 +53,13 @@
 
         End If
     End Sub
+
+    Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
+        If screen.Text = "0" Then
+            screen.Text = "4"
+        Else
+            screen.Text = screen.Text & "4"
+
+        End If
+    End Sub
 End Class
