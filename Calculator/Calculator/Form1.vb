@@ -80,4 +80,13 @@
 
         End If
     End Sub
+
+    Private Sub Button15_Click(sender As Object, e As EventArgs) Handles Button15.Click
+        If screen.Text = "0" Then
+            screen.Text = "7"
+        Else
+            screen.Text = screen.Text & "7"
+
+        End If
+    End Sub
 End Class
